@@ -32,9 +32,14 @@ public interface EmployeeRepo extends JpaRepository<Employee, Integer> {
             """)
     List<Employee> findByDesignation(String designation);
 
-   // void findByDesignation(String designation);
+   
+    @Query(nativeQuery = true, value = """
+            
+    SELECT emp.name, emp.salary
 
-    // void addEmployee(EmployeeDTO empDto);
+    FROM employee as  emp 
+            """)
+    List<Object[]> findNameSalary();
 
     
 }
