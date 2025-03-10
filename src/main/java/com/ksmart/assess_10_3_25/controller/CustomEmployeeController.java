@@ -29,5 +29,10 @@ public class CustomEmployeeController {
 
         return  customService.getEmpByDesignation(designation);
     }
+      @GetMapping("getnamesalary")
+    public List<Object[]> getNameSalary() {
+        return customService.getEmpNameAndSalary();
+    }
+    
     
 }
