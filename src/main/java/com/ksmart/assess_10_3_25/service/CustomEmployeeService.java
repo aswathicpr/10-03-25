@@ -18,6 +18,9 @@ public class CustomEmployeeService {
      return empRepo.findByDesignation(designation);
      //  throw new UnsupportedOperationException("Unimplemented method 'getEmpByDesignation'");
     }
+     public List<Object[]> getEmpNameAndSalary() {
+      return empRepo.findNameSalary();
+    }
 
     
 }
