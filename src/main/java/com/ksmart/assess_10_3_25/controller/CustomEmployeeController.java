@@ -33,6 +33,7 @@ public class CustomEmployeeController {
     public List<Object[]> getNameSalary() {
         return customService.getEmpNameAndSalary();
     }
+     
     
     
 }
