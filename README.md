@@ -1,2 +1,4 @@
-# 10-03-25
-testdemo
+# swagger
+
+http://localhost:8088/swagger-ui/index.html
+
